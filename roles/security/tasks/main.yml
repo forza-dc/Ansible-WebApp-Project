@@ -1,0 +1,10 @@
+---
+- name: Configure firewall rules
+  ufw:
+    rule: allow
+    port: "{{ item }}"
+  with_items:
+    - 80
+    - 443
+  notify: Restart UFW
+

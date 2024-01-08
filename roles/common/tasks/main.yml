@@ -1,0 +1,13 @@
+---
+- name: Update system packages
+  apt:
+    upgrade: dist
+
+- name: Install common utilities
+  apt:
+    name:
+      - vim
+      - curl
+      - wget
+    state: present
+

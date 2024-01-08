@@ -1,0 +1,4 @@
+---
+# production/group_vars/all.yml
+# Define production-specific variables here
+

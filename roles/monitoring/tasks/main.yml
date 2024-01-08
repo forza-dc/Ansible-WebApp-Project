@@ -1,0 +1,11 @@
+---
+- name: Install Prometheus
+  apt:
+    name: prometheus
+    state: present
+
+- name: Install Grafana
+  apt:
+    name: grafana
+    state: present
+

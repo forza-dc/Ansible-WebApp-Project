@@ -1,0 +1,4 @@
+---
+# staging/group_vars/all.yml
+# Define staging-specific variables here
+

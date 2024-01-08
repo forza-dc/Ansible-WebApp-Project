@@ -1,0 +1,11 @@
+---
+- name: Install Node.js
+  apt:
+    name: nodejs
+    state: present
+
+- name: Install Express
+  npm:
+    name: express
+    global: yes
+

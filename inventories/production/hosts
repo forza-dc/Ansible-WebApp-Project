@@ -1,0 +1,21 @@
+[all]
+production-server ansible_host=<production-server-ip>
+
+[common:children]
+production
+
+[frontend:children]
+production
+
+[backend:children]
+production
+
+[database:children]
+production
+
+[security:children]
+production
+
+[monitoring:children]
+production
+

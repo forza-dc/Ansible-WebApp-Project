@@ -1,0 +1,21 @@
+[all]
+staging-server ansible_host=<staging-server-ip>
+
+[common:children]
+staging
+
+[frontend:children]
+staging
+
+[backend:children]
+staging
+
+[database:children]
+staging
+
+[security:children]
+staging
+
+[monitoring:children]
+staging
+
